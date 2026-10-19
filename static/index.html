@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberAutoApplier // Executive Command Center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/jarvis.css">
+</head>
+<body>
+
+    <!-- TOP NAVIGATION & COMMAND BAR -->
+    <header class="app-header">
+        <div class="header-inner">
+            <!-- Brand & Version -->
+            <div class="brand-group">
+                <div class="brand-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        <circle cx="12" cy="11" r="3"/>
+                        <path d="m9 17 3-2 3 2"/>
+                    </svg>
+                </div>
+                <div>
+                    <div class="brand-title-row">
+                        <span class="brand-name">CyberAutoApplier</span>
+                        <span class="brand-badge">PRO v2.4</span>
+                    </div>
+                    <div class="brand-tagline">Autonomous Distance-Ranked Cybersecurity Application Engine</div>
+                </div>
+            </div>
+
+            <!-- Candidate Identity & Neural Status Cluster -->
+            <div class="candidate-card" title="Candidate profile verified for F-1 STEM OPT application automation">
+                <div class="candidate-avatar">SA</div>
+                <div class="candidate-info">
+                    <div class="candidate-name" id="candidate-name-display">Shadman Ahsan</div>
+                    <div class="candidate-meta" id="candidate-meta-display">M.S. Cybersecurity · SMSU 4.00 · Marshall, MN</div>
+                </div>
+                <div class="auth-pill-tag" id="candidate-auth-tag">F-1 STEM OPT</div>
+            </div>
+
+            <!-- Neural System Status Badges -->
+            <div style="display: flex; gap: 8px; align-items: center;" class="neural-badges">
+                <div class="badge" style="background: rgba(16, 185, 129, 0.15); color: #34d399; font-size: 0.72rem; padding: 4px 8px; border-radius: 4px; display: flex; align-items: center; gap: 4px;" title="Gemini 3.8 Flash Neural Agent Online">
+                    <span style="display:inline-block; width:6px; height:6px; background:#10b981; border-radius:50%;"></span>
+                    <span>Gemini 3.8 Flash</span>
+                </div>
+                <div class="badge" id="top-jev-badge" style="background: rgba(245, 158, 11, 0.15); color: #fbbf24; font-size: 0.72rem; padding: 4px 8px; border-radius: 4px; display: flex; align-items: center; gap: 4px; cursor: pointer;" onclick="switchTab('tab-analytics')" title="Click to view Jev System 1 router status">
+                    <span>⚡ Jev: <strong id="top-jev-mode">Shadow</strong> (~15ms)</span>
+                </div>
+                <div class="badge" id="top-brain-badge" style="background: rgba(168, 85, 247, 0.15); color: #c084fc; font-size: 0.72rem; padding: 4px 8px; border-radius: 4px; display: flex; align-items: center; gap: 4px; cursor: pointer;" onclick="switchTab('tab-second-brain')" title="Click to open Second Brain Memory Vault">
+                    <span>🧠 Brain: <strong id="top-brain-hits">9 Hits</strong> (0 Tokens)</span>
+                </div>
+            </div>
+
+            <!-- Top Executive Action Cluster -->
+            <div class="header-actions">
+                <button class="btn btn-primary" id="btn-run-cohort" onclick="openCohortModal()" title="Run distance-ranked auto applier for remaining opportunities">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                    <span>Run Cohort</span>
+                </button>
+                <button class="btn btn-secondary" onclick="triggerInboxSync()" title="Check Gmail for receipts, interviews, and Workday OTPs">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    <span>Sync Inbox</span>
+                </button>
+                <button class="btn btn-secondary" onclick="openBrowserSessionModal()" title="Launch real visible Chrome session for Handshake/LinkedIn/Workday">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    <span>Browser SSO</span>
+                </button>
+                <button class="btn btn-icon" onclick="triggerDiskHygiene()" title="Clean browser cache & compact SQLite WAL">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>
+                </button>
+                <button class="btn btn-icon" id="theme-toggle-btn" onclick="toggleTheme()" title="Switch Light / Dark Mode">
+                    <svg id="theme-icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg id="theme-icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- MAIN NAVIGATION TABS -->
+        <nav class="nav-bar">
+            <div class="nav-inner">
+                <button class="nav-btn active" data-tab="tab-workflow">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M3 12h3m12 0h3m-9-9v3m0 12v3m-6.36-2.64 2.12-2.12m8.48-8.48 2.12-2.12m-12.72 0 2.12 2.12m8.48 8.48 2.12 2.12"/></svg>
+                    <span>Workflow Architecture</span>
+                    <span class="nav-counter cyan" style="font-weight:700;">LIVE MAP</span>
+                </button>
+                <button class="nav-btn" data-tab="tab-pipeline">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                    <span>Applications Pipeline</span>
+                    <span class="nav-counter" id="nav-count-pipeline">85</span>
+                </button>
+                <button class="nav-btn" data-tab="tab-analytics">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+                    <span>API & Token Economics</span>
+                </button>
+                <button class="nav-btn" data-tab="tab-second-brain">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-5.04z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-5.04z"/></svg>
+                    <span>Second Brain Vault</span>
+                    <span class="nav-counter purple" id="nav-count-brain">27</span>
+                </button>
+                <button class="nav-btn highlight-invite" data-tab="tab-interview">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <span>Interview Invitations</span>
+                    <span class="nav-counter gold" id="nav-count-interviews">1</span>
+                </button>
+                <button class="nav-btn" data-tab="tab-portals">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    <span>Portals & SSO Bridge</span>
+                </button>
+                <button class="nav-btn" data-tab="tab-documents">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                    <span>Document Vault</span>
+                </button>
+                <button class="nav-btn" data-tab="tab-activity">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                    <span>Activity Stream</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN DASHBOARD CONTENT -->
+    <div class="dashboard-body">
+
+        <!-- EXECUTIVE KPI STATS CARDS -->
+        <section class="kpi-grid">
+            <div class="kpi-card" onclick="filterByStatus('ALL')">
+                <div class="kpi-header">
+                    <span class="kpi-title">TOTAL OPPORTUNITIES</span>
+                    <span class="kpi-icon cyan">🎯</span>
+                </div>
+                <div class="kpi-value" id="kpi-total">128</div>
+                <div class="kpi-sub">
+                    <span class="text-accent" id="kpi-queue-count">87 ranked</span> from Marshall, MN
+                </div>
+            </div>
+
+            <div class="kpi-card" onclick="filterByStatus('SUBMITTED')">
+                <div class="kpi-header">
+                    <span class="kpi-title">APPLICATIONS SUBMITTED</span>
+                    <span class="kpi-icon emerald">🚀</span>
+                </div>
+                <div class="kpi-value" id="kpi-submitted">85</div>
+                <div class="kpi-sub">
+                    <span class="text-emerald" id="kpi-success-count">73 verified</span> in Handshake & ATS
+                </div>
+            </div>
+
+            <div class="kpi-card highlight-gold" onclick="switchTab('tab-interview')">
+                <div class="kpi-header">
+                    <span class="kpi-title">ACTIVE INTERVIEWS</span>
+                    <span class="kpi-icon gold">🏆</span>
+                </div>
+                <div class="kpi-value gold" id="kpi-interviews">1</div>
+                <div class="kpi-sub">
+                    <span class="text-gold font-bold">CJ Schwan's</span> · IT Operations (0 mi)
+                </div>
+            </div>
+
+            <div class="kpi-card" onclick="filterByStatus('APPROVED')">
+                <div class="kpi-header">
+                    <span class="kpi-title">APPROVED / READY</span>
+                    <span class="kpi-icon purple">🧠</span>
+                </div>
+                <div class="kpi-value" id="kpi-approved">30</div>
+                <div class="kpi-sub">
+                    <span class="text-purple">≥ 65% match</span> scored by AI
+                </div>
+            </div>
+
+            <div class="kpi-card" onclick="switchTab('tab-documents')">
+                <div class="kpi-header">
+                    <span class="kpi-title">APPLICATION PACKAGE</span>
+                    <span class="kpi-icon blue">📁</span>
+                </div>
+                <div class="kpi-value" style="font-size: 1.25rem; font-weight: 700; color: #60a5fa; margin: 4px 0;">3 PDFS READY</div>
+                <div class="kpi-sub">
+                    <span>Resume · Cover Letter · Transcript</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRIORITY INTERVIEW RADAR BANNER (When invitation exists) -->
+        <section class="interview-banner" id="interview-alert-card">
+            <div class="interview-banner-content">
+                <div class="trophy-badge">🏆</div>
+                <div class="interview-text-group">
+                    <div class="interview-tag">INTERVIEW INVITATION ACTIVE</div>
+                    <div class="interview-headline">
+                        CJ Schwan’s — <span class="highlight">IT Operations Internship (Summer 2027)</span>
+                    </div>
+                    <div class="interview-meta">
+                        📍 Marshall, MN (0 mi from SMSU) · Direct Local Match · Active Directory, Windows Server & TRC Operations
+                    </div>
+                </div>
+            </div>
+            <div class="interview-banner-actions">
+                <button class="btn btn-gold" onclick="switchTab('tab-interview')">
+                    🎤 Start AI Mock Interview Prep
+                </button>
+                <button class="btn btn-secondary-light" onclick="openJobDetailById(11489341)">
+                    📋 View Application Details
+                </button>
+            </div>
+        </section>
+
+        <!-- =================================================================
+             TAB 0: WORKFLOW ARCHITECTURE & LIVE AUTOMATION MAP
+             ================================================================= -->
+        <main class="tab-panel active" id="tab-workflow">
+            <div class="workflow-container">
+                <!-- Workflow Hero Banner -->
+                <div class="workflow-hero">
+                    <div class="workflow-hero-header">
+                        <div>
+                            <div class="workflow-title">
+                                <span>⚡ Autonomous Multi-Tier Workflow Architecture</span>
+                                <span class="badge" style="background: rgba(16, 185, 129, 0.2); color: #34d399; font-size: 0.72rem; padding: 4px 8px; border-radius: 4px;">SYSTEM OPERATIONAL</span>
+                            </div>
+                            <div class="workflow-desc">
+                                CyberAutoApplier coordinates a 3-tier intelligence stack to apply to enterprise ATS portals (Workday, Handshake, Greenhouse, etc.) with sub-15ms routing, deterministic ground truth memory, and ~92% token reduction.
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 8px;">
+                            <button class="btn btn-primary" onclick="openSimScroll()" style="font-size: 0.8rem; padding: 8px 14px;">
+                                <span>🧪 Live Simulator</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 7-Stage Interactive Pipeline Diagram -->
+                    <div class="pipeline-diagram">
+                        <!-- Node 1 -->
+                        <div class="workflow-node active" id="node-1" onclick="selectWorkflowNode(1)">
+                            <span class="node-step-tag tag-discovery">Stage 01</span>
+                            <div class="node-title">Harvesters</div>
+                            <div class="node-subtitle">Multi-source ingestion</div>
+                            <div class="node-footer">
+                                <span class="node-latency">1.5s/batch</span>
+                                <span class="node-cost-pill zero">0 Tokens</span>
+                            </div>
+                        </div>
+                        <div class="pipeline-arrow">➔</div>
+
+                        <!-- Node 2 -->
+                        <div class="workflow-node" id="node-2" onclick="selectWorkflowNode(2)">
+                            <span class="node-step-tag tag-matcher">Stage 02</span>
+                            <div class="node-title">Distance & Auth Gate</div>
+                            <div class="node-subtitle">Marshall, MN · F-1 OPT</div>
+                            <div class="node-footer">
+                                <span class="node-latency">&lt;2ms</span>
+                                <span class="node-cost-pill zero">0 Tokens</span>
+                            </div>
+                        </div>
+                        <div class="pipeline-arrow">➔</div>
+
+                        <!-- Node 3 -->
+                        <div class="workflow-node" id="node-3" onclick="selectWorkflowNode(3)">
+                            <span class="node-step-tag tag-brain">Stage 03</span>
+                            <div class="node-title">Second Brain Vault</div>
+                            <div class="node-subtitle">Invariant ground truths</div>
+                            <div class="node-footer">
+                                <span class="node-latency">~7ms</span>
+                                <span class="node-cost-pill zero">0 Tokens</span>
+                            </div>
+                        </div>
+                        <div class="pipeline-arrow">➔</div>
+
+                        <!-- Node 4 -->
+                        <div class="workflow-node" id="node-4" onclick="selectWorkflowNode(4)">
+                            <span class="node-step-tag tag-jev">Stage 04</span>
+                            <div class="node-title">TypeSafe Jev (Sys 1)</div>
+                            <div class="node-subtitle">Fast non-autoregressive</div>
+                            <div class="node-footer">
+                                <span class="node-latency">~15ms</span>
+                                <span class="node-cost-pill low">Low Token</span>
+                            </div>
+                        </div>
+                        <div class="pipeline-arrow">➔</div>
+
+                        <!-- Node 5 -->
+                        <div class="workflow-node" id="node-5" onclick="selectWorkflowNode(5)">
+                            <span class="node-step-tag tag-llm">Stage 05</span>
+                            <div class="node-title">Gemini 3.8 Flash</div>
+                            <div class="node-subtitle">Neural generative QA</div>
+                            <div class="node-footer">
+                                <span class="node-latency">~1.1s</span>
+                                <span class="node-cost-pill llm">Generative</span>
+                            </div>
+                        </div>
+                        <div class="pipeline-arrow">➔</div>
+
+                        <!-- Node 6 -->
+                        <div class="workflow-node" id="node-6" onclick="selectWorkflowNode(6)">
+                            <span class="node-step-tag tag-playwright">Stage 06</span>
+                            <div class="node-title">Playwright Engine</div>
+                            <div class="node-subtitle">DOM click-filter bypass</div>
+                            <div class="node-footer">
+                                <span class="node-latency">~3.5s/step</span>
+                                <span class="node-cost-pill zero">0 Tokens</span>
+                            </div>
+                        </div>
+                        <div class="pipeline-arrow">➔</div>
+
+                        <!-- Node 7 -->
+                        <div class="workflow-node" id="node-7" onclick="selectWorkflowNode(7)">
+                            <span class="node-step-tag tag-hud">Stage 07</span>
+                            <div class="node-title">Review HUD / Submit</div>
+                            <div class="node-subtitle">1-Click or Human Audit</div>
+                            <div class="node-footer">
+                                <span class="node-latency">Instant</span>
+                                <span class="node-cost-pill zero">Verified</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Node Detail Inspector + Interactive Simulator -->
+                <div class="workflow-details-grid">
+                    <!-- Left: Active Node Deep Dive -->
+                    <div class="workflow-card">
+                        <div class="workflow-card-header">
+                            <div class="workflow-card-title">
+                                <span id="node-inspector-icon">🔍</span>
+                                <span id="node-inspector-title">Stage 01: Harvesters & Discovery Swarm</span>
+                            </div>
+                            <span class="badge" id="node-inspector-badge" style="background: rgba(56,189,248,0.2); color: #38bdf8; font-family: monospace;">STAGE 01</span>
+                        </div>
+                        <div class="node-spec-list" id="node-inspector-specs">
+                            <!-- Populated dynamically via selectWorkflowNode() -->
+                        </div>
+                    </div>
+
+                    <!-- Right: Live Automation & Token Simulator -->
+                    <div class="workflow-card" id="sim-card-section">
+                        <div class="workflow-card-header">
+                            <div class="workflow-card-title">
+                                <span>🧪 Live Automation & Token Simulator</span>
+                            </div>
+                            <span class="badge" style="background: rgba(56,189,248,0.15); color: #38bdf8; font-family: monospace;">ZERO-RISK TRACER</span>
+                        </div>
+                        
+                        <div class="sim-preset-chips">
+                            <span class="preset-chip" onclick="applySimPreset('workday_sponsorship')">⚡ Workday Visa Sponsorship</span>
+                            <span class="preset-chip" onclick="applySimPreset('cisco_snort')">📝 Snort IDS & Linux Essay</span>
+                            <span class="preset-chip" onclick="applySimPreset('handshake_gpa')">🎓 SMSU 4.0 GPA Query</span>
+                            <span class="preset-chip" onclick="applySimPreset('failure_overlay')">🛡️ Modal Overlay Error</span>
+                        </div>
+
+                        <div class="sim-form-group">
+                            <label class="sim-label">Target Application URL (Optional for Portal Triage):</label>
+                            <input type="text" id="sim-url-input" class="sim-input" placeholder="e.g. https://cisco.wd1.myworkdayjobs.com/Cisco_Jobs/job/...">
+                        </div>
+
+                        <div class="sim-form-group">
+                            <label class="sim-label">ATS Form Prompt / Screening Question:</label>
+                            <input type="text" id="sim-question-input" class="sim-input" placeholder="e.g. Will you now or in the future require visa sponsorship?">
+                        </div>
+
+                        <div class="sim-btn-row">
+                            <button class="btn btn-primary" id="btn-run-simulation" onclick="runPipelineSimulation()">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                                <span>Trace Pipeline Execution</span>
+                            </button>
+                            <button class="btn btn-secondary" onclick="clearSimulation()">
+                                <span>Clear</span>
+                            </button>
+                        </div>
+
+                        <!-- Live Step-by-Step Execution Trace Stream -->
+                        <div class="sim-trace-stream" id="sim-trace-stream">
+                            <div style="color: var(--text-muted); font-size: 0.78rem; text-align: center; padding: 24px;">
+                                Click "Trace Pipeline Execution" or select a preset chip above to watch Second Brain, Jev router, and Gemini execute live.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- =================================================================
+             TAB 1: APPLICATIONS PIPELINE (CENTRAL TABLE & CONTROLS)
+             ================================================================= -->
+        <main class="tab-panel" id="tab-pipeline">
+            <div class="pipeline-card">
+                <!-- Toolbar: Search, Filters, and Add Button -->
+                <div class="pipeline-toolbar">
+                    <div class="search-box">
+                        <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                        <input type="text" id="job-search-input" placeholder="Search by company, job title, location, ATS, or keyword..." oninput="handleSearch(this.value)">
+                        <button class="clear-search-btn" id="btn-clear-search" onclick="clearSearch()" style="display:none;">✕</button>
+                    </div>
+
+                    <!-- Platform Dropdown Filter -->
+                    <div class="filter-select-wrapper">
+                        <select id="select-ats-filter" onchange="handlePlatformFilter(this.value)">
+                            <option value="ALL">All Platforms & Portals</option>
+                            <option value="HANDSHAKE">Handshake Quick Apply</option>
+                            <option value="WORKDAY">Workday Enterprise</option>
+                            <option value="ORACLE">Oracle Cloud CX / Taleo</option>
+                            <option value="ICIMS">iCIMS Talent Cloud</option>
+                            <option value="SUCCESSFACTORS">SAP SuccessFactors</option>
+                            <option value="GREENHOUSE">Greenhouse</option>
+                            <option value="OTHER">Other Enterprise ATS</option>
+                        </select>
+                    </div>
+
+                    <!-- Distance Dropdown Filter -->
+                    <div class="filter-select-wrapper">
+                        <select id="select-distance-filter" onchange="handleDistanceFilter(this.value)">
+                            <option value="ALL">All Distances</option>
+                            <option value="LOCAL">Local (0 - 50 mi)</option>
+                            <option value="REGIONAL">Regional (50 - 300 mi)</option>
+                            <option value="MIDWEST">Midwest (300 - 600 mi)</option>
+                            <option value="NATIONWIDE">Nationwide (600+ mi)</option>
+                        </select>
+                    </div>
+
+                    <!-- Add Job & Refresh Actions -->
+                    <div class="toolbar-actions">
+                        <button class="btn btn-secondary" onclick="openAddJobModal()" title="Add custom job listing URL">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                            <span>Add Job</span>
+                        </button>
+                        <button class="btn btn-icon" onclick="refreshPipelineData()" title="Refresh table data">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Status Filter Chips -->
+                <div class="status-chips-bar">
+                    <button class="chip active" data-status="ALL" onclick="filterByStatus('ALL')">
+                        All <span class="chip-count" id="chip-count-all">87</span>
+                    </button>
+                    <button class="chip" data-status="SUBMITTED" onclick="filterByStatus('SUBMITTED')">
+                        Submitted <span class="chip-count emerald" id="chip-count-submitted">83</span>
+                    </button>
+                    <button class="chip" data-status="INTERVIEW_INVITATION" onclick="filterByStatus('INTERVIEW_INVITATION')">
+                        Interviews <span class="chip-count gold" id="chip-count-interview">1</span>
+                    </button>
+                    <button class="chip" data-status="APPROVED" onclick="filterByStatus('APPROVED')">
+                        Approved <span class="chip-count purple" id="chip-count-approved">30</span>
+                    </button>
+                    <button class="chip" data-status="EVALUATED" onclick="filterByStatus('EVALUATED')">
+                        Evaluated <span class="chip-count cyan" id="chip-count-evaluated">4</span>
+                    </button>
+                    <button class="chip" data-status="REJECTED" onclick="filterByStatus('REJECTED')">
+                        Filtered Out <span class="chip-count muted" id="chip-count-rejected">8</span>
+                    </button>
+                    <div class="active-count-indicator" id="table-showing-indicator">Showing 87 opportunities</div>
+                </div>
+
+                <!-- Pipeline Data Table -->
+                <div class="table-container">
+                    <table class="pipeline-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 60px;">#</th>
+                                <th style="width: 280px;">Company & Role</th>
+                                <th style="width: 220px;">Location & Distance</th>
+                                <th style="width: 170px;">Platform / ATS</th>
+                                <th style="width: 110px;">AI Match</th>
+                                <th style="width: 130px;">Status</th>
+                                <th style="width: 150px; text-align: right;">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="pipeline-tbody">
+                            <!-- Populated dynamically via JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+
+        <!-- =================================================================
+             TAB 2: API USAGE & TOKEN ECONOMICS ADMIN
+             ================================================================= -->
+        <main class="tab-panel" id="tab-analytics">
+            <div class="workflow-container">
+                <!-- Analytics Hero Banner -->
+                <div class="workflow-hero" style="border-color: rgba(168, 85, 247, 0.3);">
+                    <div class="workflow-hero-header">
+                        <div>
+                            <div class="workflow-title">
+                                <span>📊 Neural Token Economics & System 1 Analytics</span>
+                                <span class="badge" style="background: rgba(168, 85, 247, 0.2); color: #c084fc; font-size: 0.72rem; padding: 4px 8px; border-radius: 4px;">REAL-TIME TELEMETRY</span>
+                            </div>
+                            <div class="workflow-desc">
+                                Transparent audit of every token saved, sub-15ms Jev System 1 routing decision, and Second Brain persistent memory hit.
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 8px;">
+                            <button class="btn btn-secondary" onclick="fetchJevTelemetry(); fetchSecondBrainStats();">
+                                <span>🔄 Refresh Metrics</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4 Token KPI Cards -->
+                <div class="analytics-grid">
+                    <div class="analytics-kpi-card emerald">
+                        <div class="kpi-header">
+                            <span class="kpi-title">0-TOKEN BRAIN RESOLUTIONS</span>
+                            <span class="kpi-icon emerald">🧠</span>
+                        </div>
+                        <div class="kpi-metric-big text-emerald" id="analytics-hits-count">9 HITS</div>
+                        <div class="kpi-sub">
+                            <span class="text-emerald" id="analytics-hit-rate">92.4%</span> of questions answered in 0 tokens
+                        </div>
+                        <div class="kpi-progress-bar">
+                            <div class="kpi-progress-fill emerald" id="analytics-hit-bar" style="width: 92%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="analytics-kpi-card purple">
+                        <div class="kpi-header">
+                            <span class="kpi-title">TOTAL TOKENS RECLAIMED</span>
+                            <span class="kpi-icon purple">⚡</span>
+                        </div>
+                        <div class="kpi-metric-big text-purple" id="analytics-tokens-saved">3,150 TOKENS</div>
+                        <div class="kpi-sub">
+                            Spared from LLM context rot & latency
+                        </div>
+                        <div class="kpi-progress-bar">
+                            <div class="kpi-progress-fill purple" style="width: 88%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="analytics-kpi-card gold">
+                        <div class="kpi-header">
+                            <span class="kpi-title">JEV SYSTEM 1 DECISIONS</span>
+                            <span class="kpi-icon gold">🎯</span>
+                        </div>
+                        <div class="kpi-metric-big text-gold" id="analytics-jev-count">8 ROUTED</div>
+                        <div class="kpi-sub">
+                            Average Latency: <span class="text-gold" id="analytics-jev-latency">~15ms</span>
+                        </div>
+                        <div class="kpi-progress-bar">
+                            <div class="kpi-progress-fill gold" style="width: 95%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="analytics-kpi-card cyan">
+                        <div class="kpi-header">
+                            <span class="kpi-title">ESTIMATED COST SAVINGS</span>
+                            <span class="kpi-icon cyan">💰</span>
+                        </div>
+                        <div class="kpi-metric-big text-cyan" id="analytics-cost-saved">$0.0489 USD</div>
+                        <div class="kpi-sub">
+                            Calculated vs raw un-cached LLM agent
+                        </div>
+                        <div class="kpi-progress-bar">
+                            <div class="kpi-progress-fill cyan" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jev Mode Control Banner -->
+                <div class="jev-mode-banner">
+                    <div class="jev-mode-info">
+                        <div class="jev-icon-pulse">⚡</div>
+                        <div>
+                            <div style="font-weight: 700; color: #fff; font-size: 1rem; display: flex; align-items: center; gap: 8px;">
+                                <span>TypeSafe AI Jev Router Mode: <strong id="current-jev-mode-label" style="color: #fbbf24; text-transform: uppercase;">SHADOW</strong></span>
+                                <span class="badge" id="current-jev-mode-badge" style="background: rgba(245,158,11,0.2); color: #fbbf24; font-size: 0.68rem; padding: 2px 6px;">AUDIT ONLY</span>
+                            </div>
+                            <div style="color: var(--text-secondary); font-size: 0.8rem; margin-top: 2px;">
+                                In shadow mode, Jev logs routing choices alongside heuristics without blocking. In active mode, live sub-15ms decisions direct execution.
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 8px;">
+                        <button class="btn btn-secondary" id="btn-toggle-jev" onclick="toggleJevMode()">
+                            <span>Toggle Active / Shadow</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Recent Decisions Table -->
+                <div class="workflow-card">
+                    <div class="workflow-card-header">
+                        <div class="workflow-card-title">
+                            <span>📋 Recent System 1 Decision Audit Log</span>
+                        </div>
+                        <span class="badge" style="background: rgba(245,158,11,0.15); color: #fbbf24; font-family: monospace;">logs/jev_decisions.jsonl</span>
+                    </div>
+                    <div class="memory-table-wrap">
+                        <table class="data-table-modern">
+                            <thead>
+                                <tr>
+                                    <th style="width: 160px;">Timestamp</th>
+                                    <th style="width: 180px;">Task Name</th>
+                                    <th style="width: 100px;">Mode</th>
+                                    <th style="width: 100px;">Latency</th>
+                                    <th>State Summary</th>
+                                    <th style="width: 220px;">Decision Outcome</th>
+                                </tr>
+                            </thead>
+                            <tbody id="jev-decisions-tbody">
+                                <tr><td colspan="6" style="text-align: center; color: var(--text-muted); padding: 24px;">Loading decision stream...</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- =================================================================
+             TAB 3: SECOND BRAIN MEMORY VAULT ADMIN
+             ================================================================= -->
+        <main class="tab-panel" id="tab-second-brain">
+            <div class="workflow-container">
+                <!-- Second Brain Hero Banner -->
+                <div class="workflow-hero" style="border-color: rgba(99, 102, 241, 0.3);">
+                    <div class="workflow-hero-header">
+                        <div>
+                            <div class="workflow-title">
+                                <span>🧠 Second Brain Persistent Memory Vault</span>
+                                <span class="badge" style="background: rgba(168, 85, 247, 0.2); color: #c084fc; font-size: 0.72rem; padding: 4px 8px; border-radius: 4px;">ECC PERSISTENCE</span>
+                            </div>
+                            <div class="workflow-desc">
+                                SQLite table <code style="color: #38bdf8; font-family: monospace;">second_brain_memory</code> guarantees 0-token answers for invariant candidate profile truths (SMSU 4.00 GPA, F-1 STEM OPT, Student ID, EEO disclosures).
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 8px;">
+                            <button class="btn btn-primary" onclick="openAddMemoryModal()">
+                                <span>+ Add Ground Truth</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Search & Category Filters -->
+                <div class="pipeline-toolbar">
+                    <div class="search-box">
+                        <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                        <input type="text" id="memory-search-input" placeholder="Search ground truths by question, keyword, or answer..." oninput="handleMemorySearch(this.value)">
+                    </div>
+                    <div style="display: flex; gap: 6px; flex-wrap: wrap;" id="memory-category-chips">
+                        <button class="status-chip active" onclick="filterMemoriesByCategory('ALL')">All Categories</button>
+                        <button class="status-chip" onclick="filterMemoriesByCategory('WORK_AUTH')">Work Auth</button>
+                        <button class="status-chip" onclick="filterMemoriesByCategory('EDUCATION')">Education</button>
+                        <button class="status-chip" onclick="filterMemoriesByCategory('EEO')">EEO Disclosures</button>
+                        <button class="status-chip" onclick="filterMemoriesByCategory('PROFILE')">Profile Facts</button>
+                        <button class="status-chip" onclick="filterMemoriesByCategory('DYNAMIC_ATS')">Learned ATS</button>
+                    </div>
+                </div>
+
+                <!-- Memory Vault Table -->
+                <div class="memory-table-wrap">
+                    <table class="data-table-modern">
+                        <thead>
+                            <tr>
+                                <th style="width: 140px;">Category</th>
+                                <th style="width: 280px;">Question / Prompt Key</th>
+                                <th>Stored Ground Truth Answer</th>
+                                <th style="width: 100px;">Hits</th>
+                                <th style="width: 120px;">Tokens Saved</th>
+                                <th style="width: 110px;">Source</th>
+                            </tr>
+                        </thead>
+                        <tbody id="memory-vault-tbody">
+                            <tr><td colspan="6" style="text-align: center; color: var(--text-muted); padding: 24px;">Loading Second Brain memories...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+
+        <!-- =================================================================
+             TAB 4: INTERVIEW INVITATIONS & AI MOCK COACH
+             ================================================================= -->
+        <main class="tab-panel" id="tab-interview">
+            <div class="interview-coach-container">
+                <!-- Left Sidebar: Interview Opportunities -->
+                <div class="interview-sidebar">
+                    <div class="section-title-sm">Active Interview Invitations</div>
+                    <div class="interview-item active" onclick="loadInterviewPrep('schwan')">
+                        <div class="interview-item-header">
+                            <span class="company-badge-sm">CJ</span>
+                            <div>
+                                <div class="item-company">CJ Schwan’s</div>
+                                <div class="item-role">IT Operations Internship - Summer 2027</div>
+                            </div>
+                        </div>
+                        <div class="item-tags">
+                            <span class="tag-pill tag-local">0 mi · Marshall, MN</span>
+                            <span class="tag-pill tag-interview">Round 1</span>
+                        </div>
+                    </div>
+
+                    <div class="interview-item" onclick="loadInterviewPrep('bridgewater')">
+                        <div class="interview-item-header">
+                            <span class="company-badge-sm">BW</span>
+                            <div>
+                                <div class="item-company">Bridgewater Bank</div>
+                                <div class="item-role">Technology Intern</div>
+                            </div>
+                        </div>
+                        <div class="item-tags">
+                            <span class="tag-pill tag-regional">124 mi · St. Louis Park, MN</span>
+                            <span class="tag-pill tag-submitted">Submitted</span>
+                        </div>
+                    </div>
+
+                    <div class="interview-item" onclick="loadInterviewPrep('ameriprise')">
+                        <div class="interview-item-header">
+                            <span class="company-badge-sm">AP</span>
+                            <div>
+                                <div class="item-company">Ameriprise Financial</div>
+                                <div class="item-role">Technology Intern - Cybersecurity</div>
+                            </div>
+                        </div>
+                        <div class="item-tags">
+                            <span class="tag-pill tag-regional">129 mi · Minneapolis, MN</span>
+                            <span class="tag-pill tag-submitted">Submitted</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Area: Interactive Coach Questions & STAR Practice -->
+                <div class="interview-workspace">
+                    <div class="workspace-header">
+                        <div>
+                            <div class="workspace-title" id="coach-company-title">CJ Schwan’s — IT Operations Internship</div>
+                            <div class="workspace-sub" id="coach-company-sub">Target Focus: Windows Server Administration, Active Directory, TRC Helpdesk Support & Incident Escalation</div>
+                        </div>
+                        <button class="btn btn-primary" onclick="generateNewQuestions()">
+                            🔄 Generate Fresh Questions
+                        </button>
+                    </div>
+
+                    <div class="coach-questions-list" id="coach-questions-container">
+                        <!-- Questions populated dynamically -->
+                    </div>
+
+                    <!-- STAR Practice Response Box -->
+                    <div class="star-response-card">
+                        <div class="star-header">
+                            <div class="star-title">🎯 STAR Method Interactive Answer Evaluator</div>
+                            <span class="star-hint">Structure: Situation · Task · Action · Result</span>
+                        </div>
+                        <textarea id="star-answer-input" rows="4" placeholder="Type or paste your interview response here. Mention your TRC Graduate Assistantship, CYBR 510/520 coursework, Active Directory management, or specific troubleshooting scenarios..."></textarea>
+                        <div class="star-actions">
+                            <button class="btn btn-gold" id="btn-eval-star" onclick="evaluateCandidateAnswer()">
+                                ⚡ Evaluate Response with Gemini AI
+                            </button>
+                            <span class="text-muted" style="font-size: 0.8rem;">Evaluates technical accuracy, STAR completeness, and communication tone.</span>
+                        </div>
+                        <!-- Evaluation Feedback Display -->
+                        <div id="star-feedback-box" class="star-feedback" style="display: none;"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- =================================================================
+             TAB 3: CONNECTED PORTALS & SSO BRIDGE
+             ================================================================= -->
+        <main class="tab-panel" id="tab-portals">
+            <div class="portals-view-container">
+                <div class="portals-header-desc">
+                    <div class="section-title">Connected Candidate Portals & Real Browser SSO</div>
+                    <p class="section-desc">
+                        Manage your live session cookies and browser profiles. Launching any portal opens a real visible Chrome window with your authenticated candidate profile, allowing 1-click Quick Apply and automatic cookie preservation.
+                    </p>
+                </div>
+
+                <div class="portals-grid">
+                    <!-- Handshake Card -->
+                    <div class="portal-card" id="card-p-handshake">
+                        <div class="portal-card-top">
+                            <div class="portal-icon purple">🎓</div>
+                            <span class="portal-status-badge active" id="p-badge-handshake">CONNECTED</span>
+                        </div>
+                        <div class="portal-name">SMSU Handshake Collegiate Portal</div>
+                        <div class="portal-desc">Direct collegiate internship matching and 1-click Quick Apply with auto document attachment.</div>
+                        <div class="portal-account" id="p-account-handshake">Southwest Minnesota State University (SMSU) SSO</div>
+                        <button class="btn btn-secondary w-full" onclick="launchRealBrowserLogin('handshake')">
+                            Open Handshake Student Tab
+                        </button>
+                    </div>
+
+                    <!-- Workday Card -->
+                    <div class="portal-card" id="card-p-workday">
+                        <div class="portal-card-top">
+                            <div class="portal-icon emerald">🏢</div>
+                            <span class="portal-status-badge active" id="p-badge-workday">AUTOFILL ACTIVE</span>
+                        </div>
+                        <div class="portal-name">Workday Candidate Portal</div>
+                        <div class="portal-desc">Automated candidate profile autofill and multi-step application submission for Fortune 500 employers.</div>
+                        <div class="portal-account">Chrome Password Manager Bridge</div>
+                        <button class="btn btn-secondary w-full" onclick="launchRealBrowserLogin('workday')">
+                            Open Workday Login Tab
+                        </button>
+                    </div>
+
+                    <!-- Gmail IMAP Card -->
+                    <div class="portal-card" id="card-p-gmail">
+                        <div class="portal-card-top">
+                            <div class="portal-icon cyan">📬</div>
+                            <span class="portal-status-badge active" id="p-badge-gmail">LISTENER ACTIVE</span>
+                        </div>
+                        <div class="portal-name">Gmail & IMAP Receipt Radar</div>
+                        <div class="portal-desc">Monitors inbox in real-time for application receipts, interview invitations, and 6-digit Workday OTP tokens.</div>
+                        <div class="portal-account" id="p-account-gmail">shadman.ahsan.us@gmail.com</div>
+                        <div class="button-group-row">
+                            <button class="btn btn-primary" style="flex:1;" onclick="triggerInboxSync()">Sync Now</button>
+                            <button class="btn btn-secondary" style="flex:1;" onclick="triggerInboxTest()">Test Radar</button>
+                        </div>
+                    </div>
+
+                    <!-- LinkedIn Card -->
+                    <div class="portal-card" id="card-p-linkedin">
+                        <div class="portal-card-top">
+                            <div class="portal-icon blue">💼</div>
+                            <span class="portal-status-badge" id="p-badge-linkedin">STANDBY</span>
+                        </div>
+                        <div class="portal-name">LinkedIn Member Feed</div>
+                        <div class="portal-desc">Member profile session for Easy Apply automation and cybersecurity recruiter outreach.</div>
+                        <div class="portal-account" id="p-account-linkedin">Active Member Profile</div>
+                        <button class="btn btn-secondary w-full" onclick="launchRealBrowserLogin('linkedin')">
+                            Open LinkedIn Session
+                        </button>
+                    </div>
+
+                    <!-- Indeed Card -->
+                    <div class="portal-card" id="card-p-indeed">
+                        <div class="portal-card-top">
+                            <div class="portal-icon amber">📑</div>
+                            <span class="portal-status-badge" id="p-badge-indeed">STANDBY</span>
+                        </div>
+                        <div class="portal-name">Indeed Career Profile</div>
+                        <div class="portal-desc">Allows bypassing interstitial prompts and auto-submitting Indeed Apply opportunities.</div>
+                        <div class="portal-account">Indeed Candidate Session</div>
+                        <button class="btn btn-secondary w-full" onclick="launchRealBrowserLogin('indeed')">
+                            Open Indeed Session
+                        </button>
+                    </div>
+
+                    <!-- Migrate Mate Card -->
+                    <div class="portal-card" id="card-p-migratemate">
+                        <div class="portal-card-top">
+                            <div class="portal-icon rose">🛂</div>
+                            <span class="portal-status-badge" id="p-badge-migratemate">STANDBY</span>
+                        </div>
+                        <div class="portal-name">Migrate Mate (Visa Sponsorship)</div>
+                        <div class="portal-desc">Curated database of verified H-1B, CPT, and STEM OPT eligible enterprise cyber opportunities.</div>
+                        <div class="portal-account">Active Visa Sponsorship Filter</div>
+                        <button class="btn btn-secondary w-full" onclick="launchRealBrowserLogin('migratemate')">
+                            Open Migrate Mate
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- =================================================================
+             TAB 4: DOCUMENT & CREDENTIALS VAULT
+             ================================================================= -->
+        <main class="tab-panel" id="tab-documents">
+            <div class="documents-view-container">
+                <div class="portals-header-desc">
+                    <div class="section-title">Candidate Document Vault & Compliance</div>
+                    <p class="section-desc">
+                        Official verified application materials automatically attached to Handshake Quick Apply and external ATS portals.
+                    </p>
+                </div>
+
+                <div class="docs-grid">
+                    <!-- Resume Card -->
+                    <div class="doc-card">
+                        <div class="doc-badge-row">
+                            <span class="doc-icon-badge">📄 RESUME</span>
+                            <span class="doc-status-pill verified">● VERIFIED ATS PDF</span>
+                        </div>
+                        <div class="doc-title">Shadman Ahsan — Tailored ATS Resume</div>
+                        <div class="doc-summary">
+                            Highlights SMSU M.S. in Cybersecurity, TRC Graduate Assistantship, Windows Server administration, SIEM/EDR, network segmentation, and B.S. in Computer Science & Engineering.
+                        </div>
+                        <div class="doc-actions-row">
+                            <button class="btn btn-primary" onclick="previewDocument('resume')">👁️ Preview PDF</button>
+                            <a href="/api/documents/resume" download class="btn btn-secondary">⬇️ Download</a>
+                        </div>
+                    </div>
+
+                    <!-- Cover Letter Card -->
+                    <div class="doc-card">
+                        <div class="doc-badge-row">
+                            <span class="doc-icon-badge">✉️ COVER LETTER</span>
+                            <span class="doc-status-pill verified">● VERIFIED ATS PDF</span>
+                        </div>
+                        <div class="doc-title">Shadman Ahsan — Enterprise Operations Cover Letter</div>
+                        <div class="doc-summary">
+                            Formally articulates enterprise IT dev & ops experience, role-based access control (RBAC), multi-tier escalation triage, and organizational cybersecurity posture.
+                        </div>
+                        <div class="doc-actions-row">
+                            <button class="btn btn-primary" onclick="previewDocument('cover_letter')">👁️ Preview PDF</button>
+                            <a href="/api/documents/cover_letter" download class="btn btn-secondary">⬇️ Download</a>
+                        </div>
+                    </div>
+
+                    <!-- Academic Transcript Card -->
+                    <div class="doc-card">
+                        <div class="doc-badge-row">
+                            <span class="doc-icon-badge">🎓 TRANSCRIPT</span>
+                            <span class="doc-status-pill verified">● VERIFIED ACADEMIC PDF</span>
+                        </div>
+                        <div class="doc-title">SMSU Graduate Unofficial Academic Summary</div>
+                        <div class="doc-summary">
+                            Complete graduate coursework record (CYBR 510, 520, 530, 540, 550, GPA 4.0), undergraduate CSE degree, and University Graduate Assistantship verification.
+                        </div>
+                        <div class="doc-actions-row">
+                            <button class="btn btn-primary" onclick="previewDocument('transcript')">👁️ Preview PDF</button>
+                            <a href="/api/documents/transcript" download class="btn btn-secondary">⬇️ Download</a>
+                        </div>
+                    </div>
+
+                    <!-- Work Authorization & Compliance Card -->
+                    <div class="doc-card compliance-card">
+                        <div class="doc-badge-row">
+                            <span class="doc-icon-badge">🛡️ IMMIGRATION COMPLIANCE</span>
+                            <span class="doc-status-pill verified">● SEVP / CPT COMPLIANT</span>
+                        </div>
+                        <div class="doc-title">Candidate Work Authorization Profile</div>
+                        <div class="compliance-specs">
+                            <div class="spec-row">
+                                <span class="spec-label">Immigration Status:</span>
+                                <span class="spec-val">F-1 Student Visa</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Work Authorization:</span>
+                                <span class="spec-val">Yes (CPT & 3-Year STEM OPT Eligible)</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Future Sponsorship Required:</span>
+                                <span class="spec-val">Yes (H-1B Cap / Specialty Occupation)</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">US Citizen / Permanent Resident:</span>
+                                <span class="spec-val">No</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Security Clearance:</span>
+                                <span class="spec-val">None (Eligible for Public Trust / SF-85P)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- =================================================================
+             TAB 5: ACTIVITY & AUDIT LOGS
+             ================================================================= -->
+        <main class="tab-panel" id="tab-activity">
+            <div class="activity-card">
+                <div class="activity-header">
+                    <div class="activity-title-group">
+                        <span class="section-title-sm">Autonomous Execution Audit Log</span>
+                        <span class="pulse-indicator">● LIVE STREAM</span>
+                    </div>
+                    <div class="activity-controls">
+                        <button class="btn btn-secondary btn-sm" onclick="fetchLogs()">🔄 Refresh</button>
+                        <button class="btn btn-secondary btn-sm" onclick="copyActivityLogs()">📋 Copy Logs</button>
+                    </div>
+                </div>
+
+                <div class="activity-logs-container" id="activity-logs-stream">
+                    <!-- Logs populated dynamically -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- =================================================================
+         JOB DETAIL SLIDE-OVER DRAWER
+         ================================================================= -->
+    <div class="drawer-overlay" id="drawer-overlay" onclick="closeJobDrawer()"></div>
+    <aside class="job-drawer" id="job-drawer">
+        <div class="drawer-header">
+            <div>
+                <span class="drawer-pretitle" id="drawer-ats-pill">HANDSHAKE QUICK APPLY</span>
+                <h2 class="drawer-title" id="drawer-company-title">Company Name</h2>
+                <div class="drawer-role" id="drawer-job-title">Job Title</div>
+            </div>
+            <button class="drawer-close-btn" onclick="closeJobDrawer()">✕</button>
+        </div>
+
+        <div class="drawer-body">
+            <!-- Metadata Pills -->
+            <div class="drawer-meta-grid">
+                <div class="meta-item">
+                    <span class="meta-label">Location:</span>
+                    <span class="meta-val" id="drawer-location">Minneapolis, MN</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Distance from SMSU:</span>
+                    <span class="meta-val highlight" id="drawer-distance">129 miles</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Application Status:</span>
+                    <span class="meta-val" id="drawer-status">SUBMITTED</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">AI Match Score:</span>
+                    <span class="meta-val text-emerald" id="drawer-match-score">95% Match</span>
+                </div>
+            </div>
+
+            <!-- Direct Portal Links -->
+            <div class="drawer-section">
+                <div class="section-title-sm">Direct Application Links</div>
+                <div class="links-box">
+                    <a id="drawer-handshake-link" href="#" target="_blank" class="direct-link-btn">
+                        <span>🎓 View on Handshake</span> ↗
+                    </a>
+                    <a id="drawer-external-link" href="#" target="_blank" class="direct-link-btn" style="display:none;">
+                        <span>🌐 Direct Employer ATS Career Link</span> ↗
+                    </a>
+                </div>
+            </div>
+
+            <!-- AI Match Rationale -->
+            <div class="drawer-section">
+                <div class="section-title-sm">AI Match Rationale & Qualifications</div>
+                <div class="drawer-rationale-box" id="drawer-match-reason">
+                    Direct local match: Marshall, MN, SMSU MS Cybersecurity candidate, Windows Server & IT Operations experience.
+                </div>
+            </div>
+
+            <!-- Submission Audit -->
+            <div class="drawer-section">
+                <div class="section-title-sm">Submission Audit & Execution Log</div>
+                <div class="drawer-audit-box" id="drawer-audit-log">
+                    Method: HANDSHAKE_QUICK_APPLY | Verified in database
+                </div>
+            </div>
+
+            <!-- Documents Attached -->
+            <div class="drawer-section">
+                <div class="section-title-sm">Application Documents Transmitted</div>
+                <div class="attached-docs-row">
+                    <span class="attached-doc-tag">📄 Shadman_Ahsan_Resume.pdf</span>
+                    <span class="attached-doc-tag">✉️ Shadman_Ahsan_Cover_Letter.pdf</span>
+                    <span class="attached-doc-tag">🎓 Shadman_Ahsan_Unofficial_Transcript.pdf</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="drawer-footer">
+            <button class="btn btn-primary" id="drawer-btn-apply" onclick="reapplyCurrentDrawerJob()">
+                🚀 Re-Apply in Visible Chrome
+            </button>
+            <button class="btn btn-secondary" onclick="closeJobDrawer()">
+                Close
+            </button>
+        </div>
+    </aside>
+
+    <!-- =================================================================
+         MODAL: DOCUMENT VIEWER
+         ================================================================= -->
+    <div class="modal-backdrop" id="modal-doc-viewer" onclick="closeDocModal(event)">
+        <div class="modal-card modal-lg" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <div class="modal-title" id="modal-doc-title">Document Preview</div>
+                <button class="modal-close-btn" onclick="closeDocModal()">✕</button>
+            </div>
+            <div class="modal-body" style="padding: 0; height: 75vh;">
+                <iframe id="doc-iframe" src="" style="width: 100%; height: 100%; border: none;"></iframe>
+            </div>
+            <div class="modal-footer">
+                <a id="modal-doc-download-btn" href="#" download class="btn btn-primary">⬇️ Download PDF</a>
+                <button class="btn btn-secondary" onclick="closeDocModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- =================================================================
+         MODAL: ADD CUSTOM JOB
+         ================================================================= -->
+    <div class="modal-backdrop" id="modal-add-job" onclick="closeAddJobModal(event)">
+        <div class="modal-card" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <div class="modal-title">Add Custom Job Opportunity</div>
+                <button class="modal-close-btn" onclick="closeAddJobModal()">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label class="form-label">Job Title *</label>
+                    <input type="text" id="add-job-title" class="form-input" placeholder="e.g. Cybersecurity Analyst Intern">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Company Name *</label>
+                    <input type="text" id="add-job-company" class="form-input" placeholder="e.g. Target Corporation">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Application URL *</label>
+                    <input type="url" id="add-job-url" class="form-input" placeholder="https://careers.company.com/job/12345">
+                </div>
+                <div class="form-row">
+                    <div class="form-group" style="flex: 1;">
+                        <label class="form-label">Location</label>
+                        <input type="text" id="add-job-location" class="form-input" placeholder="Minneapolis, MN / Remote">
+                    </div>
+                    <div class="form-group" style="flex: 1;">
+                        <label class="form-label">Platform Type</label>
+                        <select id="add-job-ats" class="form-select">
+                            <option value="WORKDAY">Workday</option>
+                            <option value="HANDSHAKE">Handshake</option>
+                            <option value="ORACLE">Oracle CX / Taleo</option>
+                            <option value="ICIMS">iCIMS</option>
+                            <option value="GREENHOUSE">Greenhouse</option>
+                            <option value="OTHER" selected>Other</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeAddJobModal()">Cancel</button>
+                <button class="btn btn-primary" onclick="submitCustomJob()">Add to Pipeline & Evaluate</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- =================================================================
+         MODAL: RUN COHORT OPTIONS
+         ================================================================= -->
+    <div class="modal-backdrop" id="modal-run-cohort" onclick="closeCohortModal(event)">
+        <div class="modal-card" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <div class="modal-title">🚀 Run Distance-Ranked Cohort Applier</div>
+                <button class="modal-close-btn" onclick="closeCohortModal()">✕</button>
+            </div>
+            <div class="modal-body">
+                <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.5; margin-bottom: 16px;">
+                    This autonomous pipeline processes opportunities starting from Marshall, MN outward. It handles Handshake Quick Apply, uploads tailored documents, routes external employer ATS listings, and records all confirmations in SQLite.
+                </p>
+                <div class="form-group">
+                    <label class="form-label">Start at Queue Index (0 = nearest to Marshall, MN):</label>
+                    <input type="number" id="cohort-start-idx" class="form-input" value="0" min="0" max="86">
+                    <span style="font-size: 0.75rem; color: var(--text-muted);">Queue contains 87 total distance-ranked opportunities.</span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeCohortModal()">Cancel</button>
+                <button class="btn btn-primary" onclick="executeCohortBatch()">▶ Start Autonomous Run</button>
+            </div>
+    <!-- =================================================================
+         MODAL: ADD SECOND BRAIN GROUND TRUTH
+         ================================================================= -->
+    <div class="modal-backdrop" id="modal-add-memory" onclick="closeAddMemoryModal(event)">
+        <div class="modal-card" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <div class="modal-title">🧠 Add Ground Truth to Second Brain</div>
+                <button class="modal-close-btn" onclick="closeAddMemoryModal()">✕</button>
+            </div>
+            <div class="modal-body">
+                <p style="font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 16px;">
+                    Ground truths added here are stored persistently in SQLite and resolved in 0 tokens on subsequent job applications.
+                </p>
+                <div class="form-group">
+                    <label class="form-label">Category:</label>
+                    <select id="new-mem-category" class="form-select">
+                        <option value="WORK_AUTH">Work Authorization / Visa</option>
+                        <option value="EDUCATION">Education / Degree / GPA</option>
+                        <option value="PROFILE">Personal / Contact Facts</option>
+                        <option value="EEO">EEO Disclosures</option>
+                        <option value="DYNAMIC_ATS">Custom Question & Answer</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Question / Prompt / Keyword Anchor:</label>
+                    <input type="text" id="new-mem-prompt" class="form-input" placeholder="e.g. Do you require visa sponsorship?">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Authoritative Ground Truth Answer:</label>
+                    <textarea id="new-mem-answer" class="form-textarea" rows="3" placeholder="e.g. Yes"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeAddMemoryModal()">Cancel</button>
+                <button class="btn btn-primary" onclick="saveNewMemory()">💾 Save to Second Brain</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <script src="/static/jarvis_app.js"></script>
+</body>
+</html>

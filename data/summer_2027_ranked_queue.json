@@ -1,0 +1,872 @@
+[
+  {
+    "id": "11489436",
+    "title": "IT Systems Developer Internship - Summer 2027",
+    "company": "CJ Schwan\u2019s",
+    "raw_location": "Marshall, MN + 1",
+    "display_location": "Marshall, MN (0 mi)",
+    "distance_miles": 0,
+    "tier": 1,
+    "url": "https://app.joinhandshake.com/jobs/11489436"
+  },
+  {
+    "id": "11489341",
+    "title": "IT Operations Internship - Summer 2027",
+    "company": "CJ Schwan\u2019s",
+    "raw_location": "Marshall, MN + 1",
+    "display_location": "Marshall, MN (0 mi)",
+    "distance_miles": 0,
+    "tier": 1,
+    "url": "https://app.joinhandshake.com/jobs/11489341"
+  },
+  {
+    "id": "11481659",
+    "title": "Technology Intern",
+    "company": "Bridgewater Bank",
+    "raw_location": "St. Louis Park, MN",
+    "display_location": "St. Louis Park, MN (124 mi)",
+    "distance_miles": 124,
+    "tier": 2,
+    "url": "https://app.joinhandshake.com/jobs/11481659"
+  },
+  {
+    "id": "11383045",
+    "title": "Technology Intern",
+    "company": "Ameriprise Financial",
+    "raw_location": "Minneapolis, MN",
+    "display_location": "Minneapolis, MN (129 mi)",
+    "distance_miles": 129,
+    "tier": 2,
+    "url": "https://app.joinhandshake.com/jobs/11383045"
+  },
+  {
+    "id": "11411998",
+    "title": "Summer 2027 Technical Support Internship",
+    "company": "Elire Inc.",
+    "raw_location": "Minneapolis, MN",
+    "display_location": "Minneapolis, MN (129 mi)",
+    "distance_miles": 129,
+    "tier": 2,
+    "url": "https://app.joinhandshake.com/jobs/11411998"
+  },
+  {
+    "id": "11412193",
+    "title": "Summer 2027 Technical Consulting Internship",
+    "company": "Elire Inc.",
+    "raw_location": "Minneapolis, MN",
+    "display_location": "Minneapolis, MN (129 mi)",
+    "distance_miles": 129,
+    "tier": 2,
+    "url": "https://app.joinhandshake.com/jobs/11412193"
+  },
+  {
+    "id": "11436400",
+    "title": "AI Infrastructure & Networking Consulting Internship",
+    "company": "Elire Inc.",
+    "raw_location": "Minneapolis, MN",
+    "display_location": "Minneapolis, MN (129 mi)",
+    "distance_miles": 129,
+    "tier": 2,
+    "url": "https://app.joinhandshake.com/jobs/11436400"
+  },
+  {
+    "id": "11436453",
+    "title": "AI Software Development Consulting Internship",
+    "company": "Elire Inc.",
+    "raw_location": "Minneapolis, MN",
+    "display_location": "Minneapolis, MN (129 mi)",
+    "distance_miles": 129,
+    "tier": 2,
+    "url": "https://app.joinhandshake.com/jobs/11436453"
+  },
+  {
+    "id": "11293943",
+    "title": "ITS Analyst Intern",
+    "company": "Mortenson",
+    "raw_location": "Minneapolis, MN",
+    "display_location": "Minneapolis, MN (129 mi)",
+    "distance_miles": 129,
+    "tier": 2,
+    "url": "https://app.joinhandshake.com/jobs/11293943"
+  },
+  {
+    "id": "11379742",
+    "title": "Software Engineering Intern, Summer 2027",
+    "company": "Northmarq",
+    "raw_location": "Minneapolis, MN",
+    "display_location": "Minneapolis, MN (129 mi)",
+    "distance_miles": 129,
+    "tier": 2,
+    "url": "https://app.joinhandshake.com/jobs/11379742"
+  },
+  {
+    "id": "11374176",
+    "title": "3M Internship - 2027\u00a0Undergraduate IT Intern",
+    "company": "3M",
+    "raw_location": "Maplewood, MN",
+    "display_location": "Maplewood, MN (141 mi)",
+    "distance_miles": 141,
+    "tier": 2,
+    "url": "https://app.joinhandshake.com/jobs/11374176"
+  },
+  {
+    "id": "11404858",
+    "title": "Competitive Intelligence Intern II, Summer 2027 (Remote)",
+    "company": "BAE Systems, Inc.",
+    "raw_location": "Competitive Intelligence Intern II, Summer 2027 (Remote)",
+    "display_location": "Remote (0 mi commute)",
+    "distance_miles": 0,
+    "tier": 3,
+    "url": "https://app.joinhandshake.com/jobs/11404858"
+  },
+  {
+    "id": "11467753",
+    "title": "2027 Blackstone Government Relations Summer Analyst",
+    "company": "Blackstone",
+    "raw_location": "Remote or New York City, NY",
+    "display_location": "Remote (0 mi commute)",
+    "distance_miles": 0,
+    "tier": 3,
+    "url": "https://app.joinhandshake.com/jobs/11467753"
+  },
+  {
+    "id": "11403233",
+    "title": "Part-Time Student Technology Auditor - Remote(124235)",
+    "company": "John Deere",
+    "raw_location": "Part-Time Student Technology Auditor - Remote(124235)",
+    "display_location": "Remote (0 mi commute)",
+    "distance_miles": 0,
+    "tier": 3,
+    "url": "https://app.joinhandshake.com/jobs/11403233"
+  },
+  {
+    "id": "11395861",
+    "title": "Summer 2027 Information Technology Intern",
+    "company": "Mutual of Omaha",
+    "raw_location": "Remote",
+    "display_location": "Remote (0 mi commute)",
+    "distance_miles": 0,
+    "tier": 3,
+    "url": "https://app.joinhandshake.com/jobs/11395861"
+  },
+  {
+    "id": "11385831",
+    "title": "IT Risk Assurance Intern - Summer 2027",
+    "company": "Sensiba LLP",
+    "raw_location": "Remote",
+    "display_location": "Remote (0 mi commute)",
+    "distance_miles": 0,
+    "tier": 3,
+    "url": "https://app.joinhandshake.com/jobs/11385831"
+  },
+  {
+    "id": "11460019",
+    "title": "Intern, Cybersecurity (Data Privacy & Security Awareness)",
+    "company": "Ulta Beauty",
+    "raw_location": "Remote or Bolingbrook, IL",
+    "display_location": "Remote (0 mi commute)",
+    "distance_miles": 0,
+    "tier": 3,
+    "url": "https://app.joinhandshake.com/jobs/11460019"
+  },
+  {
+    "id": "11366593",
+    "title": "IT Infrastructure Internship - Summer 2027",
+    "company": "Conagra Brands",
+    "raw_location": "Omaha, NE",
+    "display_location": "Omaha, NE (220 mi)",
+    "distance_miles": 220,
+    "tier": 4,
+    "url": "https://app.joinhandshake.com/jobs/11366593"
+  },
+  {
+    "id": "11366628",
+    "title": "Cybersecurity Internship - Summer 2027",
+    "company": "Conagra Brands",
+    "raw_location": "Omaha, NE",
+    "display_location": "Omaha, NE (220 mi)",
+    "distance_miles": 220,
+    "tier": 4,
+    "url": "https://app.joinhandshake.com/jobs/11366628"
+  },
+  {
+    "id": "11467087",
+    "title": "Cyber Security Intern - Summer 2027",
+    "company": "Hy-Vee",
+    "raw_location": "West Des Moines, IA",
+    "display_location": "West Des Moines, IA (223 mi)",
+    "distance_miles": 223,
+    "tier": 4,
+    "url": "https://app.joinhandshake.com/jobs/11467087"
+  },
+  {
+    "id": "11466917",
+    "title": "IT Security Loss Intern - Summer 2027",
+    "company": "Hy-Vee",
+    "raw_location": "West Des Moines, IA",
+    "display_location": "West Des Moines, IA (223 mi)",
+    "distance_miles": 223,
+    "tier": 4,
+    "url": "https://app.joinhandshake.com/jobs/11466917"
+  },
+  {
+    "id": "11467395",
+    "title": "Network & Systems Intern - Summer 2027",
+    "company": "Hy-Vee",
+    "raw_location": "West Des Moines, IA",
+    "display_location": "West Des Moines, IA (223 mi)",
+    "distance_miles": 223,
+    "tier": 4,
+    "url": "https://app.joinhandshake.com/jobs/11467395"
+  },
+  {
+    "id": "11467283",
+    "title": "Data Analytics Intern - Summer 2027",
+    "company": "Hy-Vee",
+    "raw_location": "West Des Moines, IA",
+    "display_location": "West Des Moines, IA (223 mi)",
+    "distance_miles": 223,
+    "tier": 4,
+    "url": "https://app.joinhandshake.com/jobs/11467283"
+  },
+  {
+    "id": "11368939",
+    "title": "Information Technology Internship - summer 2027",
+    "company": "Springs Window Fashions",
+    "raw_location": "Middleton, WI",
+    "display_location": "Middleton, WI (~309 mi)",
+    "distance_miles": 309,
+    "tier": 4,
+    "url": "https://app.joinhandshake.com/jobs/11368939"
+  },
+  {
+    "id": "11282083",
+    "title": "IT Infrastructure Intern",
+    "company": "U.S. Venture, Inc",
+    "raw_location": "Appleton, WI",
+    "display_location": "Appleton, WI (~309 mi)",
+    "distance_miles": 309,
+    "tier": 4,
+    "url": "https://app.joinhandshake.com/jobs/11282083"
+  },
+  {
+    "id": "11357430",
+    "title": "IT Infrastructure Intern - Fall 2026",
+    "company": "U.S. Venture, Inc",
+    "raw_location": "Appleton, WI",
+    "display_location": "Appleton, WI (~309 mi)",
+    "distance_miles": 309,
+    "tier": 4,
+    "url": "https://app.joinhandshake.com/jobs/11357430"
+  },
+  {
+    "id": "11335060",
+    "title": "Intern, Control Systems Engineering and Cybersecurity",
+    "company": "Evergy",
+    "raw_location": "Kansas City, MO",
+    "display_location": "Kansas City, MO (374 mi)",
+    "distance_miles": 374,
+    "tier": 4,
+    "url": "https://app.joinhandshake.com/jobs/11335060"
+  },
+  {
+    "id": "11357109",
+    "title": "GTG Intern - Cybersecurity",
+    "company": "Grainger",
+    "raw_location": "Chicago, IL",
+    "display_location": "Chicago, IL (447 mi)",
+    "distance_miles": 447,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11357109"
+  },
+  {
+    "id": "11357087",
+    "title": "GTG Intern - Software Engineer (Summer 2027)",
+    "company": "Grainger",
+    "raw_location": "Chicago, IL",
+    "display_location": "Chicago, IL (447 mi)",
+    "distance_miles": 447,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11357087"
+  },
+  {
+    "id": "11497888",
+    "title": "Summer 2027 Intern - IT, Cloud Engineering",
+    "company": "Mesirow",
+    "raw_location": "Chicago, IL",
+    "display_location": "Chicago, IL (447 mi)",
+    "distance_miles": 447,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11497888"
+  },
+  {
+    "id": "11498210",
+    "title": "Summer 2027 Intern - Security Analyst - Ent Sec",
+    "company": "State Farm Insurance Companies",
+    "raw_location": "Bloomington, IL",
+    "display_location": "Bloomington, IL (~463 mi)",
+    "distance_miles": 463,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11498210"
+  },
+  {
+    "id": "11477947",
+    "title": "Summer 2027 Intern - Agency Services - Business Analyst-Agency",
+    "company": "State Farm Insurance Companies",
+    "raw_location": "Bloomington, IL",
+    "display_location": "Bloomington, IL (~463 mi)",
+    "distance_miles": 463,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11477947"
+  },
+  {
+    "id": "11478448",
+    "title": "IT Infrastructure Intern - Summer 2027",
+    "company": "Olin Corporation",
+    "raw_location": "Clayton, MO + 1",
+    "display_location": "Clayton, MO + 1 (490 mi)",
+    "distance_miles": 490,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11478448"
+  },
+  {
+    "id": "11396691",
+    "title": "SAP Analyst Intern - Summer 2027",
+    "company": "Olin Corporation",
+    "raw_location": "Clayton, MO",
+    "display_location": "Clayton, MO (490 mi)",
+    "distance_miles": 490,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11396691"
+  },
+  {
+    "id": "11375689",
+    "title": "2027 AI, Data, & Analytics Summer Internship",
+    "company": "Stellantis",
+    "raw_location": "Auburn Hills, MI",
+    "display_location": "Auburn Hills, MI (~534 mi)",
+    "distance_miles": 534,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11375689"
+  },
+  {
+    "id": "11385072",
+    "title": "2027 Technical Software Intern",
+    "company": "Stellantis",
+    "raw_location": "Auburn Hills, MI",
+    "display_location": "Auburn Hills, MI (~534 mi)",
+    "distance_miles": 534,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11385072"
+  },
+  {
+    "id": "11380578",
+    "title": "Cybersecurity Internship",
+    "company": "Toyota Material Handling North America",
+    "raw_location": "Columbus, IN",
+    "display_location": "Columbus, IN (623 mi)",
+    "distance_miles": 623,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11380578"
+  },
+  {
+    "id": "11497419",
+    "title": "Information Systems - Digital Experience and Enablement Intern, Summer 2027",
+    "company": "BAE Systems, Inc.",
+    "raw_location": "Westminster, CO + 2",
+    "display_location": "Westminster, CO + 2 (~625 mi)",
+    "distance_miles": 625,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11497419"
+  },
+  {
+    "id": "11453564",
+    "title": "Summer Games Cyber Intern - Colorado Springs, CO",
+    "company": "Booz Allen Hamilton Inc",
+    "raw_location": "Summer Games Cyber Intern - Colorado Springs, CO",
+    "display_location": "Summer Games Cyber Intern - Colorado Springs, CO (~625 mi)",
+    "distance_miles": 625,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11453564"
+  },
+  {
+    "id": "11345910",
+    "title": "(#R000157502) IT Security Internship",
+    "company": "Procter & Gamble (P&G)",
+    "raw_location": "Cincinnati, OH",
+    "display_location": "Cincinnati, OH (687 mi)",
+    "distance_miles": 687,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11345910"
+  },
+  {
+    "id": "11347827",
+    "title": "(#R000157917) IT Security (2027 Grads)",
+    "company": "Procter & Gamble (P&G)",
+    "raw_location": "Cincinnati, OH",
+    "display_location": "Cincinnati, OH (687 mi)",
+    "distance_miles": 687,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11347827"
+  },
+  {
+    "id": "11451860",
+    "title": "Data Science Internship (Summer 2027)",
+    "company": "Battelle",
+    "raw_location": "Columbus, OH",
+    "display_location": "Columbus, OH (723 mi)",
+    "distance_miles": 723,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11451860"
+  },
+  {
+    "id": "11362014",
+    "title": "Summer 2027 Technology Internship",
+    "company": "Huntington Bank",
+    "raw_location": "Columbus, OH",
+    "display_location": "Columbus, OH (723 mi)",
+    "distance_miles": 723,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11362014"
+  },
+  {
+    "id": "11361368",
+    "title": "Summer 2027 Data and Analytics Internship",
+    "company": "Huntington Bank",
+    "raw_location": "Columbus, OH + 3",
+    "display_location": "Columbus, OH + 3 (723 mi)",
+    "distance_miles": 723,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11361368"
+  },
+  {
+    "id": "11488569",
+    "title": "Information Technology Intern",
+    "company": "Cleveland-Cliffs",
+    "raw_location": "Cleveland, OH + 2",
+    "display_location": "Cleveland, OH + 2 (739 mi)",
+    "distance_miles": 739,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11488569"
+  },
+  {
+    "id": "11373326",
+    "title": "IT Systems Product Management Intern (Summer 2027)",
+    "company": "Vertiv",
+    "raw_location": "Westerville, OH",
+    "display_location": "Westerville, OH (~744 mi)",
+    "distance_miles": 744,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11373326"
+  },
+  {
+    "id": "11260546",
+    "title": "Global Technology Summer Analyst (Information Security / Cybersecurity) - 2027 - Singapore",
+    "company": "Bank of America",
+    "raw_location": "United States",
+    "display_location": "United States (~800 mi)",
+    "distance_miles": 800,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11260546"
+  },
+  {
+    "id": "11454477",
+    "title": "Summer Games Cyber Security Intern - Honolulu, Hawaii",
+    "company": "Booz Allen Hamilton Inc",
+    "raw_location": "Honolulu, HI",
+    "display_location": "Honolulu, HI (~800 mi)",
+    "distance_miles": 800,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11454477"
+  },
+  {
+    "id": "11454235",
+    "title": "Summer Games Cyber Security Intern - Charleston, SC",
+    "company": "Booz Allen Hamilton Inc",
+    "raw_location": "Summer Games Cyber Security Intern - Charleston, SC",
+    "display_location": "Summer Games Cyber Security Intern - Charleston, SC (~800 mi)",
+    "distance_miles": 800,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11454235"
+  },
+  {
+    "id": "11307832",
+    "title": "2027 Engineering Summer Analyst (Internship) Program",
+    "company": "Goldman Sachs",
+    "raw_location": "United States",
+    "display_location": "United States (~800 mi)",
+    "distance_miles": 800,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11307832"
+  },
+  {
+    "id": "11335479",
+    "title": "2027 Information Technology Summer Analyst - AZ",
+    "company": "MUFG",
+    "raw_location": "Tempe, AZ",
+    "display_location": "Tempe, AZ (~800 mi)",
+    "distance_miles": 800,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11335479"
+  },
+  {
+    "id": "11307575",
+    "title": "2027 Technology, Data, AI & Ventures Summer Internship Program - Security Engineer Intern",
+    "company": "New York Life Insurance Company",
+    "raw_location": "2027 Technology, Data, AI & Ventures Summer Internship Program - Security Engineer Intern",
+    "display_location": "2027 Technology, Data, AI & Ventures Summer Internship Program - Security Engineer Intern (~800 mi)",
+    "distance_miles": 800,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11307575"
+  },
+  {
+    "id": "11491205",
+    "title": "IT Network Intern, Summer 2027",
+    "company": "Watts Water Technologies",
+    "raw_location": "Andover, MA",
+    "display_location": "Andover, MA (~800 mi)",
+    "distance_miles": 800,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11491205"
+  },
+  {
+    "id": "11490391",
+    "title": "Summer Internship Cyber Governance (OneTech)- Dallas, TX",
+    "company": "Southern Glazer's Wine & Spirits",
+    "raw_location": "Summer Internship Cyber Governance (OneTech)- Dallas, TX",
+    "display_location": "Summer Internship Cyber Governance (OneTech)- Dallas, TX (808 mi)",
+    "distance_miles": 808,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11490391"
+  },
+  {
+    "id": "11490220",
+    "title": "Summer Internship Cyber Ops (OneTech)- Miramar, FL or Dallas, TX",
+    "company": "Southern Glazer's Wine & Spirits",
+    "raw_location": "Summer Internship Cyber Ops (OneTech)- Miramar, FL or Dallas, TX",
+    "display_location": "Summer Internship Cyber Ops (OneTech)- Miramar, FL or Dallas, TX (808 mi)",
+    "distance_miles": 808,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11490220"
+  },
+  {
+    "id": "11488814",
+    "title": "Cybersecurity Intern",
+    "company": "Howmet Aerospace Inc.",
+    "raw_location": "Pittsburgh, PA",
+    "display_location": "Pittsburgh, PA (849 mi)",
+    "distance_miles": 849,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11488814"
+  },
+  {
+    "id": "11490372",
+    "title": "Summer 2027 Intern - HR&D - Software Developer",
+    "company": "State Farm Insurance Companies",
+    "raw_location": "Richardson, TX",
+    "display_location": "Richardson, TX (~945 mi)",
+    "distance_miles": 945,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11490372"
+  },
+  {
+    "id": "11489042",
+    "title": "University - 2027 Summer Games Cyber Security Intern - Atlanta, GA",
+    "company": "Booz Allen Hamilton Inc",
+    "raw_location": "University - 2027 Summer Games Cyber Security Intern - Atlanta, GA",
+    "display_location": "University - 2027 Summer Games Cyber Security Intern - Atlanta, GA (957 mi)",
+    "distance_miles": 957,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11489042"
+  },
+  {
+    "id": "11372084",
+    "title": "Information Technology Systems Administrator Internship Summer 2027",
+    "company": "Naval Nuclear Laboratory",
+    "raw_location": "West Mifflin, PA",
+    "display_location": "West Mifflin, PA (~968 mi)",
+    "distance_miles": 968,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11372084"
+  },
+  {
+    "id": "11362594",
+    "title": "2027 Summer Intern - Technology Analyst, Software Engineering",
+    "company": "PIMCO",
+    "raw_location": "Austin, TX",
+    "display_location": "Austin, TX (985 mi)",
+    "distance_miles": 985,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11362594"
+  },
+  {
+    "id": "11340952",
+    "title": "2027 Summer Intern Program - Information Technology",
+    "company": "SMBC",
+    "raw_location": "Charlotte, NC",
+    "display_location": "Charlotte, NC (1014 mi)",
+    "distance_miles": 1014,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11340952"
+  },
+  {
+    "id": "11340797",
+    "title": "2027 Summer Intern Program - Information Security",
+    "company": "SMBC",
+    "raw_location": "Charlotte, NC",
+    "display_location": "Charlotte, NC (1014 mi)",
+    "distance_miles": 1014,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11340797"
+  },
+  {
+    "id": "11488975",
+    "title": "(#R0119215) 2027 Truist Internship- Risk Management Program",
+    "company": "Truist",
+    "raw_location": "Charlotte, NC",
+    "display_location": "Charlotte, NC (1014 mi)",
+    "distance_miles": 1014,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11488975"
+  },
+  {
+    "id": "11355455",
+    "title": "Federal Reserve Summer 2027 Technical Internship",
+    "company": "Federal Reserve Bank of Richmond",
+    "raw_location": "Richmond, VA",
+    "display_location": "Richmond, VA (~1018 mi)",
+    "distance_miles": 1018,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11355455"
+  },
+  {
+    "id": "11261032",
+    "title": "Genworth IT Development Program Analyst - 2027",
+    "company": "Genworth",
+    "raw_location": "Richmond, VA",
+    "display_location": "Richmond, VA (~1018 mi)",
+    "distance_miles": 1018,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11261032"
+  },
+  {
+    "id": "11366802",
+    "title": "2027 IT SUMMER INTERNSHIP - IT INTERN",
+    "company": "HII - Newport News Shipbuilding division",
+    "raw_location": "Newport News, VA",
+    "display_location": "Newport News, VA (~1018 mi)",
+    "distance_miles": 1018,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11366802"
+  },
+  {
+    "id": "11391467",
+    "title": "Information Technology Intern",
+    "company": "National Geospatial-Intelligence Agency",
+    "raw_location": "Springfield, VA + 1",
+    "display_location": "Springfield, VA + 1 (~1018 mi)",
+    "distance_miles": 1018,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11391467"
+  },
+  {
+    "id": "11243464",
+    "title": "Information Security Engineer Intern",
+    "company": "Appian Corporation",
+    "raw_location": "McLean, VA",
+    "display_location": "McLean, VA (1030 mi)",
+    "distance_miles": 1030,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11243464"
+  },
+  {
+    "id": "11434625",
+    "title": "Summer Games Cyber Security Intern - Mclean, Virginia",
+    "company": "Booz Allen Hamilton Inc",
+    "raw_location": "McLean, VA",
+    "display_location": "McLean, VA (1030 mi)",
+    "distance_miles": 1030,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11434625"
+  },
+  {
+    "id": "11401953",
+    "title": "2027 Information Technology Intern",
+    "company": "Trane Technologies",
+    "raw_location": "Davidson, NC + 5",
+    "display_location": "Davidson, NC + 5 (~1036 mi)",
+    "distance_miles": 1036,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11401953"
+  },
+  {
+    "id": "11390362",
+    "title": "Digital & Information Technology Internships - Summer 2027",
+    "company": "CHA Consulting, Inc.",
+    "raw_location": "Albany, NY + 1",
+    "display_location": "Albany, NY + 1 (~1057 mi)",
+    "distance_miles": 1057,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11390362"
+  },
+  {
+    "id": "11372081",
+    "title": "Data Science Internship Summer 2027",
+    "company": "Naval Nuclear Laboratory",
+    "raw_location": "Niskayuna, NY",
+    "display_location": "Niskayuna, NY (~1057 mi)",
+    "distance_miles": 1057,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11372081"
+  },
+  {
+    "id": "11424358",
+    "title": "2027\u00a0Guardian Summer\u00a0Intern,\u00a0Digital & Technology - Cybersecurity",
+    "company": "Guardian Life Insurance Company",
+    "raw_location": "Bethlehem, PA + 2",
+    "display_location": "Bethlehem, PA + 2 (1069 mi)",
+    "distance_miles": 1069,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11424358"
+  },
+  {
+    "id": "11335433",
+    "title": "2027 Information Technology Summer Analyst - New Jersey",
+    "company": "MUFG",
+    "raw_location": "Jersey City, NJ",
+    "display_location": "Jersey City, NJ (1132 mi)",
+    "distance_miles": 1132,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11335433"
+  },
+  {
+    "id": "11467620",
+    "title": "2027 Early Careers: Summer Intern, Data Office \u2013 United States, Atlanta, GA, Charlotte, NC, Parsippany, NJ, Jersey City, NJ & New York, NY",
+    "company": "AIG",
+    "raw_location": "2027 Early Careers: Summer Intern, Data Office \u2013 United States, Atlanta, GA, Charlotte, NC, Parsippany, NJ, Jersey City, NJ & New York, NY",
+    "display_location": "2027 Early Careers: Summer Intern, Data Office \u2013 United States, Atlanta, GA, Charlotte, NC, Parsippany, NJ, Jersey City, NJ & New York, NY (1134 mi)",
+    "distance_miles": 1134,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11467620"
+  },
+  {
+    "id": "11367245",
+    "title": "2027 Internal Audit - Technology Audit Summer Analyst Program (New York)",
+    "company": "Morgan Stanley",
+    "raw_location": "New York City, NY",
+    "display_location": "New York City, NY (1134 mi)",
+    "distance_miles": 1134,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11367245"
+  },
+  {
+    "id": "11376176",
+    "title": "Tech Intern | 2027 Summer Internship Program",
+    "company": "Verisk",
+    "raw_location": "Boston, MA + 3",
+    "display_location": "Boston, MA + 3 (1244 mi)",
+    "distance_miles": 1244,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11376176"
+  },
+  {
+    "id": "11464376",
+    "title": "Software Development Engineer Intern - Summer 2027 (USA)",
+    "company": "Amazon",
+    "raw_location": "Seattle, WA + 1",
+    "display_location": "Seattle, WA + 1 (1285 mi)",
+    "distance_miles": 1285,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11464376"
+  },
+  {
+    "id": "11482637",
+    "title": "Undergraduate Intern - Information Technology Summer 2027",
+    "company": "Philip Morris International U.S.",
+    "raw_location": "Tampa, FL + 1",
+    "display_location": "Tampa, FL + 1 (1356 mi)",
+    "distance_miles": 1356,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11482637"
+  },
+  {
+    "id": "11446241",
+    "title": "Summer Games Cyber Security Intern - El Segundo, California",
+    "company": "Booz Allen Hamilton Inc",
+    "raw_location": "El Segundo, CA",
+    "display_location": "El Segundo, CA (~1361 mi)",
+    "distance_miles": 1361,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11446241"
+  },
+  {
+    "id": "11397937",
+    "title": "Summer 2027 Engineering Intern",
+    "company": "Divergent",
+    "raw_location": "Torrance, CA + 1",
+    "display_location": "Torrance, CA + 1 (~1361 mi)",
+    "distance_miles": 1361,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11397937"
+  },
+  {
+    "id": "11362600",
+    "title": "2027 Summer Intern - Legal & Compliance Analyst",
+    "company": "PIMCO",
+    "raw_location": "Newport Beach, CA",
+    "display_location": "Newport Beach, CA (~1361 mi)",
+    "distance_miles": 1361,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11362600"
+  },
+  {
+    "id": "11373860",
+    "title": "2027 Summer Internship \u2013 Data Analytics/Science/Applied Math \u2013 (Pomona/Rosemead)",
+    "company": "Southern California Edison",
+    "raw_location": "Rosemead, CA",
+    "display_location": "Rosemead, CA (~1361 mi)",
+    "distance_miles": 1361,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11373860"
+  },
+  {
+    "id": "11387959",
+    "title": "CSX Technology Internship - Summer 2027 (Paid)",
+    "company": "CSX Corporation",
+    "raw_location": "Jacksonville, FL",
+    "display_location": "Jacksonville, FL (~1367 mi)",
+    "distance_miles": 1367,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11387959"
+  },
+  {
+    "id": "11490179",
+    "title": "Summer Intern Data Scientist/ Analyst- Miramar, FL",
+    "company": "Southern Glazer's Wine & Spirits",
+    "raw_location": "Summer Intern Data Scientist/ Analyst- Miramar, FL",
+    "display_location": "Summer Intern Data Scientist/ Analyst- Miramar, FL (~1367 mi)",
+    "distance_miles": 1367,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11490179"
+  },
+  {
+    "id": "11447092",
+    "title": "Activision 2027 Summer Internships - Information Security",
+    "company": "Activision Blizzard",
+    "raw_location": "Sherman Oaks, CA",
+    "display_location": "Sherman Oaks, CA (1398 mi)",
+    "distance_miles": 1398,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11447092"
+  },
+  {
+    "id": "11434913",
+    "title": "Summer Games Cyber Security Intern - San Diego, California",
+    "company": "Booz Allen Hamilton Inc",
+    "raw_location": "San Diego, CA",
+    "display_location": "San Diego, CA (1403 mi)",
+    "distance_miles": 1403,
+    "tier": 5,
+    "url": "https://app.joinhandshake.com/jobs/11434913"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "cyber_internship_swarm": {
+      "command": "python3",
+      "args": [
+        "-m",
+        "main",
+        "daemon"
+      ],
+      "env": {
+        "GEMINI_API_KEY": "${GEMINI_API_KEY}"
+      },
+      "description": "Local 24/7 Autonomous Cybersecurity Internship Application Swarm"
+    }
+  }
+}

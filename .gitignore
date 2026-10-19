@@ -1,0 +1,40 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Sensitive Secrets & Credentials (NEVER COMMIT)
+.env
+*.env
+config/credentials.json
+config/storage_state.json
+config/jarvis_browser_profile/
+config/jarvis_chrome_profile/
+
+# Browser Profiles & Runtime State
+data/browser_profile/
+data/*.db
+data/*.sqlite*
+data/*.jsonl
+data/*.png
+data/*.webp
+data/jarvis_state.json
+data/tailored/
+data/interviews/
+logs/
+*.log
+
+# Scratch & Temporary Run Scripts
+scratch/
+.tempmediaStorage/
+.user_uploaded/
+.system_generated/
+.DS_Store

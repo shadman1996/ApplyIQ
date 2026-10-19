@@ -1,0 +1,22 @@
+{
+  "llm_provider": "gemini",
+  "primary_model": "gemini-2.5-pro",
+  "fast_model": "gemini-2.5-flash",
+  "max_daily_applications": 25,
+  "match_score_threshold": 65,
+  "target_keywords": [
+    "Cybersecurity",
+    "Information Security",
+    "Security Engineer",
+    "SOC Analyst",
+    "Application Security",
+    "AppSec",
+    "Cloud Security",
+    "DevOps Security",
+    "IAM",
+    "Systems Security"
+  ],
+  "browser_headless": false,
+  "slow_mo_ms": 100,
+  "auto_submit": true
+}

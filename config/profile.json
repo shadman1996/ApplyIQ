@@ -1,0 +1,164 @@
+{
+  "personal_info": {
+    "first_name": "Shadman",
+    "last_name": "Ahsan",
+    "full_name": "Shadman Ahsan",
+    "email": "shadman_ahsan@yahoo.com",
+    "phone": "+1 (507) 850-3155",
+    "location": {
+      "address_line1": "202 N 1st St",
+      "address_line2": "Apt 6097",
+      "city": "Marshall",
+      "state": "MN",
+      "zip": "56258",
+      "country": "United States"
+    },
+    "linkedin": "https://linkedin.com/in/shadman-ahsan",
+    "github": "https://github.com/shadman1996",
+    "website": "https://shadman1996.github.io"
+  },
+  "professional_summary": "Enterprise Systems, DevOps, and Full-Stack Software Engineer with 5+ years of end-to-end technical experience spanning enterprise MIS, IT operations, cloud containerization, and scalable web application development. Currently an M.S. in Cybersecurity candidate at Southwest Minnesota State University, unifying frontline systems administration, modern DevOps automation, and defensible software architecture to build and scale secure, high-performance platforms.",
+  "target_roles": [
+    "Cybersecurity Intern",
+    "Information Security Intern",
+    "SOC Analyst Intern",
+    "Application Security (AppSec) Intern",
+    "Cloud Security / DevOps Security Intern",
+    "IAM / Security Engineering Intern",
+    "Supply Chain Cybersecurity & IT Systems Analyst",
+    "Enterprise Systems & MIS Operations Specialist",
+    "ERP & Business Systems Security Analyst"
+  ],
+  "education": [
+    {
+      "institution": "Southwest Minnesota State University",
+      "location": "Marshall, MN, USA",
+      "degree": "Master of Science (MS) in Cybersecurity",
+      "gpa": "4.00",
+      "student_id": "17280072",
+      "start_date": "Jan 2026",
+      "end_date": "Present",
+      "status": "In Progress",
+      "coursework": [
+        "CYBR 500: Intro to Info Security (Grade A)",
+        "CYBR 510: Cyber Sec Law & Policy (Grade A)",
+        "CYBR 520: Computer Syst Sec",
+        "CYBR 600: Risk Mgmt",
+        "Digital Forensics",
+        "Cybersecurity Strategy",
+        "Secure Software Engineering",
+        "Network Security",
+        "Data Privacy Laws & Governance"
+      ],
+      "appointment": "Graduate Assistant — Technology Resource Center (TRC) Management"
+    },
+    {
+      "institution": "Independent University, Bangladesh",
+      "location": "Dhaka, Bangladesh",
+      "degree": "Bachelor of Science in Computer Science and Engineering",
+      "start_date": "Jan 2016",
+      "end_date": "May 2021",
+      "status": "Completed",
+      "coursework": [
+        "Data Structures & Algorithms",
+        "Object-Oriented Programming (OOP)",
+        "Database Systems (DBMS)",
+        "Systems Analysis & Design",
+        "Operating Systems",
+        "Computer Networks"
+      ]
+    }
+  ],
+  "work_experience": [
+    {
+      "company": "Southwest Minnesota State University",
+      "title": "Graduate Assistant — Technology Resource Center (TRC)",
+      "location": "Marshall, MN",
+      "start_date": "May 2026",
+      "end_date": "Present",
+      "is_current": true,
+      "responsibilities": [
+        "Direct tier-2 technical escalations and endpoint administration across university systems, managing Identity and Access Management (IAM), Multi-Factor Authentication (MFA) enforcement, and account provisioning for campus-wide faculty and students.",
+        "Leverage enterprise ITSM and ticketing platforms to monitor support trends, perform Quality Assurance (QA) audits on ticket lifecycles, and optimize resolution workflows to minimize Mean Time to Resolution (MTTR).",
+        "Govern official IT Knowledge Base (KB) architecture and Standard Operating Procedures (SOPs), authoring and validating technical runbooks to eliminate documentation gaps and ensure compliance with university IT security standards.",
+        "Mentor, coach, and supervise frontline Student Technology Support Technicians, leading onboarding initiatives and instilling structured troubleshooting methodologies, customer empathy, and service delivery excellence.",
+        "Serve as the primary operational liaison between tier-1 support and senior enterprise IT engineering teams, accelerating the triaging and remediation of high-priority classroom AV networks, operating system failures, and campus infrastructure anomalies."
+      ]
+    },
+    {
+      "company": "Helen Keller International",
+      "title": "Management Information System Specialist",
+      "location": "Dhaka, Bangladesh",
+      "start_date": "Sep 2023",
+      "end_date": "Mar 2025",
+      "is_current": false,
+      "responsibilities": [
+        "Directed enterprise systems administration and tier-2/tier-3 IT operations for 700+ distributed corporate and remote personnel, configuring endpoint provisioning, troubleshooting cross-platform OS environments, and resolving complex network connectivity incidents.",
+        "Maintained 99.9% infrastructure availability across production SQL databases and cloud-hosted enterprise MIS platforms, enforcing automated backup routines, disaster recovery failovers, and proactive query optimizations.",
+        "Engineered advanced SQL data pipelines and live Power BI dashboards integrated with ArcGIS geospatial mapping, providing executive leadership and international stakeholders with real-time visibility into mission-critical program KPIs.",
+        "Spearheaded systematic Data Quality Assessments (DQAs), data deduplication, and schema reconciliation across multi-source datasets, ensuring complete audit readiness, strict data validation, and compliance with statutory donor standards.",
+        "Authored standardized technical runbooks (SOPs) and delivered cross-functional systems training, driving enterprise platform adoption across regional teams and slashing recurring helpdesk ticket volume by 25%."
+      ]
+    },
+    {
+      "company": "Sajida Foundation",
+      "title": "Assistant Coordinator — MIS & IT (SUDIN Program)",
+      "location": "Dhaka, Bangladesh",
+      "start_date": "Jun 2022",
+      "end_date": "Aug 2023",
+      "is_current": false,
+      "responsibilities": [
+        "Administered, customized, and scaled enterprise Salesforce CRM architecture for 1,000+ distributed users across Microfinance, Health, and HR sectors, enforcing Role-Based Access Control (RBAC) and strict data governance policies.",
+        "Spearheaded end-to-end data migrations of sensitive beneficiary datasets from legacy environments into Salesforce using automated validation scripts, achieving 100% data integrity and zero operational disruption.",
+        "Managed regional LAN/WAN network infrastructure, secure enterprise VPN tunnels, and endpoint security across district offices, resolving escalated systems issues and conducting technical training for regional staff.",
+        "Architected automated Salesforce workflows, data pipelines, and dynamic analytics dashboards, cutting manual reporting turnaround by 30% and ensuring real-time audit readiness for executive and donor reviews."
+      ]
+    },
+    {
+      "company": "Accomium",
+      "title": "Software Developer",
+      "location": "Remote",
+      "start_date": "Jan 2022",
+      "end_date": "Jan 2023",
+      "is_current": false,
+      "responsibilities": [
+        "Architected and deployed an enterprise-grade financial accounting platform utilizing Vue 3, Nuxt 3, Laravel, and PostgreSQL, integrating dynamic ledger visualizations via Chart.js to handle sensitive transactional workflows.",
+        "Engineered scalable relational database schemas and optimized high-volume SQL queries, cutting query execution latency and implementing Harlem for deterministic, real-time frontend state management.",
+        "Built secure RESTful APIs with strict input validation and session controls to safeguard financial records, executing rigorous cross-browser testing and debugging across Linux/Windows environments to guarantee 99.9% release stability."
+      ]
+    },
+    {
+      "company": "CMED Health Limited",
+      "title": "Software Quality Assurance (Internship)",
+      "location": "Dhaka, Bangladesh",
+      "start_date": "Aug 2021",
+      "end_date": "Dec 2021",
+      "is_current": false,
+      "responsibilities": [
+        "Engineered and executed comprehensive manual and automated test suites using Selenium WebDriver and Appium, validating end-to-end workflows across web and mobile health platforms.",
+        "Logged, prioritized, and tracked functional defects and edge-case anomalies in Jira, collaborating directly with developers in Agile sprints to accelerate patch verification and cut regression cycles.",
+        "Performed cross-browser, cross-OS, and load testing across iOS, Android, and web environments to guarantee data consistency, interface stability, and zero critical defects prior to production releases."
+      ]
+    }
+  ],
+  "skills": {
+    "systems_iam": ["Windows Server", "Linux (Ubuntu/RHEL)", "macOS", "Active Directory", "Group Policy (GPO)", "RBAC", "MFA Enforcement", "TCP/IP", "LAN/WAN", "VPN", "VLANs", "DNS/DHCP"],
+    "devops_cloud": ["Kubernetes", "Docker", "CI/CD Pipelines (GitHub Actions, Netlify)", "Google Cloud Platform (GCP)", "Supabase", "Firebase", "RESTful API Architecture"],
+    "programming_frameworks": ["Python", "TypeScript", "JavaScript", "PHP", "Java", "C++", "SQL", "HTML5/CSS3", "Django", "FastAPI", "React", "Vue 3", "Nuxt 3", "Laravel"],
+    "databases_enterprise": ["PostgreSQL", "MySQL", "Microsoft SQL Server", "Oracle DB", "Salesforce CRM Admin", "Google Workspace Admin", "Microsoft 365 Admin"],
+    "security_analytics_qa": ["Snort IDS", "Digital Forensics", "Power BI", "ArcGIS (GIS Mapping)", "KoBoToolbox", "Taroworks", "Selenium WebDriver", "Appium", "Git/GitHub", "Jira"],
+    "supply_chain_enterprise_systems": ["Supply Chain IT & Logistics Data Pipelines", "ERP Systems Integration", "Salesforce Enterprise CRM", "SQL ETL & Schema Modeling", "ITSM & Helpdesk Governance", "Asset Management & Tracking", "Disaster Recovery & Backup Automation", "Data Quality Assessment (DQA)", "Power BI / ArcGIS Telemetry"]
+  },
+  "eeo_demographics": {
+    "gender": "Male",
+    "race_ethnicity": "Asian (Not Hispanic or Latino)",
+    "hispanic_latino": "No",
+    "veteran_status": "I am not a protected veteran",
+    "disability_status": "No, I do not have a disability",
+    "work_authorization": "Authorized to work in US (MS Cybersecurity Student / CPT-OPT eligible)",
+    "sponsorship_required": "May require sponsorship in future",
+    "security_clearance": "None / Eligible for Public Trust",
+    "us_citizen": "No",
+    "decline_self_identify": false
+  }
+}
